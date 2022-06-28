@@ -35,5 +35,7 @@
                 ?>
             </div>
         </main>
+
+        <script type="module" src="/res/js/homePage.js"></script>
     </body>
 </html>

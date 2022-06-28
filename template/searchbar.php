@@ -7,7 +7,7 @@
             
             <input 
                 type="text"
-                class="section-data" 
+                class="section-data destino" 
                 value="São Paulo"
             />
         </div>
