@@ -7,6 +7,19 @@
     </head>
 
     <body>
+        <header class="header">
+            <a href="/" class="logo">
+                infotravel
+            </a>
+
+            <div class="buttons">
+                <div class="button">
+                    <img src="/res/icon/exit.svg">
+                    <p>Iniciar Sessão</p>
+                </div>
+            </div>
+        </header>
+
         <main>
             <div class="home-page">
                 <h1 class="heading-text">

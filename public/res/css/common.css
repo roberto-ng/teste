@@ -8,6 +8,7 @@
     --primary-color: #0080FF;
     --text-color: #00264D;
     --black-text-color: #000000;
+    --caption-color: #698096;
 }
 
 
@@ -22,7 +23,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 93vh;
 }
 
 .heading-text {
@@ -40,4 +41,40 @@ body {
 
 .text-color {
     color: var(--text-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a.logo {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 59px;
+
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.header .buttons {
+    color: var(--caption-color);
+    margin-right: 74px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 26px;
+}
+
+.header .button {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
 }
