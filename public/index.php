@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-        <!-- Fontes -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
-
-        <link rel="stylesheet" href="/res/css/common.css">
+        <?php
+            include "../template/headContent.php";
+        ?>
     </head>
 
     <body>
-        <div class="home-page">
-            <?php
-                include "../template/searchbar.php";
-            ?>
-        </div>
+        <main>
+            <div class="home-page">
+                <h1 class="heading-text">
+                    <span class="text-color">Os melhores</span> 
+                    <span class="text-primary-color">Hoteis</span>
+                    <span class="text-color">e</span>
+                    <span class="text-primary-color">Destinos</span></br> 
+                    <span>para sua viagem</span>
+                </h1>
+                
+                <?php
+                    include "../template/searchbar.php";
+                ?>
+            </div>
+        </main>
     </body>
 </html>

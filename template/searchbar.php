@@ -49,11 +49,11 @@
     
     <div class="section-wrapper">
         <div class="separator"></div>
-        
+
         <div class="section">
             <div class="section-title">
                 <img src="/res/icon/guests.svg" class="icon">
-                <p style="height: 24px;">Hospedes</p>
+                <p style="height: 24px;">Hóspedes</p>
             </div>
             
             <p class="section-data" style="height: 26px;">
