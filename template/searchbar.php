@@ -10,6 +10,11 @@
                 class="section-data destino" 
                 value="São Paulo"
             />
+
+            <div class="suggestion-dropdown">
+                <div class="arrow-up"></div>
+                <div class="suggestion-box"></div>
+            </div>
         </div>
     
     
