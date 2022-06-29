@@ -14,7 +14,13 @@ function populateSuggestionBox(suggestions) {
         div.classList.add('suggestion');
 
         const layout = `
-            <img class="icon" src="/res/icon/icon.svg" height="13.5px" width="13.5px" />
+            <img 
+                src="/res/icon/icon.svg" 
+                height="13.5px" 
+                width="13.5px" 
+                style="pointer-events: none" 
+            />
+            
             <div class="suggestion-data">
                 <p class="suggestion-name">
                     ${sanitizeHTML(suggestion.name.trim())}
