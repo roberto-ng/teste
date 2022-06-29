@@ -2,7 +2,7 @@
 <html>
     <head>
         <?php
-            include "../template/headContent.php";
+            include "./template/headContent.php";
         ?>
     </head>
 
@@ -14,7 +14,7 @@
 
             <div class="buttons">
                 <div class="button">
-                    <img src="/res/icon/exit.svg">
+                    <img src="res/icon/exit.svg">
                     <p>Iniciar Sessão</p>
                 </div>
             </div>
@@ -31,11 +31,11 @@
                 </h1>
                 
                 <?php
-                    include "../template/searchbar.php";
+                    include "./template/searchbar.php";
                 ?>
             </div>
         </main>
 
-        <script type="module" src="/res/js/homePage.js"></script>
+        <script type="module" src="res/js/homePage.js"></script>
     </body>
 </html>

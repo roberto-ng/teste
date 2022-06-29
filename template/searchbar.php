@@ -1,7 +1,11 @@
+<?php 
+    $uri = $_SERVER['REQUEST_URI'];
+?>
+
 <div class="search-bar">
         <div class="section" style="min-width: 364px;">
             <div class="section-title">
-                <img src="/res/icon/icon.svg" class="icon">
+                <img src="res/icon/icon.svg" class="icon">
                 <p style="height: 24px;">Destino</p>
             </div>
             
@@ -20,7 +24,7 @@
     
         <div class="section">
             <div class="section-title">
-                <img src="/res/icon/calendar.svg" class="icon">
+                <img src="res/icon//calendar.svg" class="icon">
                 <p style="height: 24px;">Entrada</p>
             </div>
             
@@ -33,7 +37,7 @@
         <div class="section-wrapper">
             <div class="section">
                 <div class="section-title">
-                    <img src="/res/icon/calendar.svg" class="icon">
+                    <img src="res/icon/calendar.svg" class="icon">
                     <p style="height: 24px;">Saída</p>
                 </div>
                 
@@ -44,7 +48,7 @@
             
             <div class="section">
                 <div class="section-title">
-                    <img src="/res/icon/guests.svg" class="icon">
+                    <img src="res/icon/guests.svg" class="icon">
                     <p style="height: 24px;">Hóspedes</p>
                 </div>
                 

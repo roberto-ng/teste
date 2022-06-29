@@ -1,4 +1,4 @@
-const SUGGESTION_API_URL = 'http://0.0.0.0:3333/suggestions';
+const SUGGESTION_API_URL = 'http://localhost:3333/suggestions';
 
 /**
  * @typedef Suggestion

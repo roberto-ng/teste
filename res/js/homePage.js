@@ -15,7 +15,7 @@ function populateSuggestionBox(suggestions) {
 
         const layout = `
             <img 
-                src="/res/icon/icon.svg" 
+                src="res/icon/icon.svg" 
                 height="13.5px" 
                 width="13.5px" 
                 style="pointer-events: none" 
