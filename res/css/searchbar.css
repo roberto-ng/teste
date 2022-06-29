@@ -78,7 +78,7 @@
     line-height: 26px;
 }
 
-.search-bar .btn-pesquisar {
+.search-bar .btn-search {
     color: white;
     background-color: var(--primary-color);
     box-shadow: 0px 2px 9px 1px rgba(0, 128, 255, 0.29);

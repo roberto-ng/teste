@@ -59,7 +59,9 @@
         </div>
     
 
-    <button class="btn-pesquisar">
+    <button class="btn-search">
         Pesquisar
     </button>
 </div>
+
+<script type="module" src="res/js/searchbar.js"></script>
