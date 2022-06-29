@@ -7,3 +7,12 @@ export function sanitizeHTML(html) {
     decoder.innerHTML = html;
     return decoder.textContent;
 }
+
+/**
+ * @param {Node} parent 
+ */
+export function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
