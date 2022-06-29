@@ -56,6 +56,7 @@
     margin-right: 10px;
     height: 14;
     width: 13.15;
+    pointer-events: none;
 }
 
 .search-bar .section .section-title {
@@ -92,6 +93,11 @@
 .suggestion-dropdown {
     position: absolute;
     margin-top: 324px;
+    display: none;
+}
+
+.suggestion-dropdown.active {
+    display: unset;
 }
 
 .suggestion-box {
@@ -123,10 +129,12 @@
 .suggestion-box .suggestion-data {
     display: flex;
     flex-direction: column;
+    pointer-events: none;
 }
 
 .suggestion-box .suggestion-name {
     color: var(--text-color);
+    pointer-events: none;
 
     font-style: normal;
     font-weight: 600;

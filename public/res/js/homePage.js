@@ -10,16 +10,17 @@ function populateSuggestionBox(suggestions) {
     
     for (const suggestion of suggestions) {
         const div = document.createElement('div');
+        div.addEventListener('click', handleSuggestionClick);
         div.classList.add('suggestion');
 
         const layout = `
-            <img src="/res/icon/icon.svg" height="13.5px" width="13.5px" />
+            <img class="icon" src="/res/icon/icon.svg" height="13.5px" width="13.5px" />
             <div class="suggestion-data">
                 <p class="suggestion-name">
-                    ${sanitizeHTML(suggestion.name)}
+                    ${sanitizeHTML(suggestion.name.trim())}
                 </p>
                 <p class="suggestion-region">
-                    ${sanitizeHTML(suggestion.region)}
+                    ${sanitizeHTML(suggestion.region.trim())}
                 </p>
             </div>
         `;
@@ -32,11 +33,23 @@ function populateSuggestionBox(suggestions) {
  * @param {Event} e
  */
 function handleDestinationTextChange(e) {
+    const dropdown = document.querySelector('.suggestion-dropdown');
     if (e.target instanceof HTMLInputElement) {
         const text = e.target.value;
+        if (text.trim().length === 0) {
+            dropdown.classList.remove('active');
+            return;
+        }
+
         fetchSuggestions(text)
             .then((suggestions) => {
+                if (suggestions.length === 0) {
+                    dropdown.classList.remove('active');
+                    return;
+                }
+
                 populateSuggestionBox(suggestions);
+                dropdown.classList.add('active');
             })
             .catch((err) => {
                 console.error(err);
@@ -44,8 +57,28 @@ function handleDestinationTextChange(e) {
     }
 }
 
+/**
+ * @param {Event} e
+ */
+function handleSuggestionClick(e) {
+    /** @type {HTMLInputElement} */
+    const destinationInput = document.querySelector('.search-bar input.destino');
+    const dropdown = document.querySelector('.suggestion-dropdown');
+    const suggestionDiv = e.target;
+
+    if (suggestionDiv instanceof HTMLElement) {
+        const suggestionNameText = suggestionDiv.querySelector('p.suggestion-name');
+        destinationInput.value = suggestionNameText.textContent.trim();
+
+        // Fechar dropdown
+        dropdown.classList.remove('active');
+    }
+}
+
 window.addEventListener('load', () => {  
     document
         .querySelector('.search-bar input.destino')
         .addEventListener('input', handleDestinationTextChange);
+
+    //destinationInput.addEventListener('blur', handleDestinationBlur);
 })
