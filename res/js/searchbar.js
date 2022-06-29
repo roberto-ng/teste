@@ -1,7 +1,7 @@
 import { fetchSuggestions } from './api.js';
 import { removeAllChildNodes, sanitizeHTML } from './util.js';
 
-/**
+/** Preenche a caixa de sugestões com itens
  * @param {import('./api').Suggestion[]} suggestions 
  */
 function populateSuggestionBox(suggestions) {

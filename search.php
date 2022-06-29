@@ -13,6 +13,17 @@
             <?php
                 include "./template/searchbar.php";
             ?>
+
+            <div class="result-infobox">
+                <p class="location-name text-color">
+                    <span class="bold-text">São Paulo,</span> 
+                    Brasil
+                </p>
+
+                <p class="location-caption caption-color">
+                    102 hoteis encontrados
+                </p>
+            </div>
         </div>
 
         <script type="module" src="res/js/searchPage.js"></script>

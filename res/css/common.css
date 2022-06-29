@@ -44,6 +44,10 @@ body {
     color: var(--text-color);
 }
 
+.caption-color {
+    color: var(--caption-color);
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -78,4 +82,8 @@ body {
     display: flex;
     flex-direction: row;
     gap: 7px;
+}
+
+.bold-text {
+    font-weight: bold;
 }

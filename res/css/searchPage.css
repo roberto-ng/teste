@@ -3,3 +3,27 @@
     align-items: center;
     flex-direction: column;
 }
+
+.result-infobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+
+    width: 1307px;
+    margin-top: 28px;
+}
+
+.result-infobox p.location-name {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+}
+
+.result-infobox p.location-caption {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+}
