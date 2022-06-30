@@ -13,7 +13,7 @@
             <input 
                 type="text"
                 class="section-data destino" 
-                value="São Paulo"
+                value=""
             />
 
             <div class="suggestion-dropdown">

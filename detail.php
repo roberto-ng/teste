@@ -120,10 +120,15 @@
                 <?php endif ?>
             </div>
 
+        </div>
             <?php
                 include "./template/footer.php";
             ?>
-        </div>
+
+
+        <section class="modal">
+            This is a modal page!
+        </section>
     </body>
 </html>
 

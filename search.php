@@ -32,11 +32,11 @@
                 <div class="hotel-cards"></div>
             
             </div>
-
+        </div>
+        
             <?php
                 include "./template/footer.php";
             ?>
-        </div>
 
         <script type="module" src="res/js/searchPage.js"></script>
     </body>

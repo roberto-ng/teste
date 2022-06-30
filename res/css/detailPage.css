@@ -5,7 +5,6 @@
     min-height: 82vh;
 }
 
-
 .hotel-box {
     width: 1307px;
     height: auto;
@@ -175,4 +174,25 @@ p.avaliable-rooms-text {
 
 .err-msg {
     margin-top: 26px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index:101;
+    background-color: var(--overlay-color);
+
+    visibility: hidden;
+    opacity: 0;
+    
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
 }
