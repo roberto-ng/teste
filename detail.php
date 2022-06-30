@@ -119,16 +119,38 @@
                     </div>
                 <?php endif ?>
             </div>
-
         </div>
-            <?php
-                include "./template/footer.php";
-            ?>
+
+        <?php
+            include "./template/footer.php";
+        ?>
 
 
         <section class="modal">
-            This is a modal page!
+            <div class="circle" style="width: 380px; height: 380px; opacity: 0.02;">
+            </div>
+
+            <div class="circle" style="width: 280px; height: 280px; opacity: 0.04;">
+            </div>
+
+            <div class="circle" style="width: 180px; height: 180px; opacity: 0.04;">
+            </div>
+
+            <div class="circle" style="width: 80px; height: 80px;">
+                <img 
+                    src="res/icon/correct.svg" 
+                    width="24px" 
+                    height="16.5px"
+                >
+            </div>
+            
+            <div class="modal-texts">
+                <p class="obrigado">Obrigado!</p>
+                <p class="sucesso">Reserva realizada com sucesso.</p>
+            </div>
         </section>
+
+        <script type="module" src="res/js/detailPage.js"></script>
     </body>
 </html>
 
