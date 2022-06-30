@@ -1,4 +1,4 @@
-/** Does basic sanitization on a string
+/** Sanitiza uma string para uso seguro com html
  * @param {string} html
  * @returns {string}
  */
