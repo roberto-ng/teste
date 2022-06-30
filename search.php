@@ -20,10 +20,11 @@
                     Brasil
                 </p>
 
-                <p class="location-caption caption-color">
-                    102 hoteis encontrados
-                </p>
+                <!-- Mostrar quantidade de hotéis encontrados -->
+                <p class="location-caption caption-color"></p>
             </div>
+
+            <div class="hotel-cards"></div>
         </div>
 
         <script type="module" src="res/js/searchPage.js"></script>
