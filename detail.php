@@ -63,6 +63,59 @@
                                 </p>
                             </div>
                         </div>
+
+                        <div class="hotel-box-bottom">
+                            <p class="avaliable-rooms-text">
+                                Quartos disponíveis
+                            </p>
+
+                            <div class="rooms">
+                                <?php foreach($data->rooms as $room): ?>
+                                    <div class="room">
+                                        <div style="height: 100%; display: flex; flex-direction: column; justify-content: center">
+                                            <p class="room-name">
+                                                <?php echo $room->roomType->name; ?>
+                                            </p>
+
+                                            <div style="display: flex; align-items: center; gap: 8px">
+                                                <?php if ($room->cancellationPolicies->refundable): ?>
+                                                    <img 
+                                                        src="res/icon/yes.svg" 
+                                                        width="12px" 
+                                                        height="12px"
+                                                    >
+                                                    <p class="yes">Cancelamento gratuito</p>
+                                                <?php else: ?>
+                                                    <img 
+                                                        src="res/icon/no.svg" 
+                                                        width="12px" 
+                                                        height="12px"
+                                                    >
+                                                    <p class="no">Multa de cancelamento</p>
+                                                <?php endif ?>
+                                            </div>
+                                        </div>
+
+                                        <div style="display: flex; align-items: center;">
+                                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                                <p class="price">
+                                                    R$ <?php echo $room->price->amount ?> 
+                                                    <span class="price-nights">/ noite</span>
+                                                </p>
+
+                                                <p class="payment-text">
+                                                    Pagamento no hotel
+                                                </p>
+                                            </div>
+
+                                            <button class="button">
+                                                Reservar Agora
+                                            </button>
+                                        </div>
+                                    </div>
+                                <?php endforeach ?>
+                            </div>
+                        </div>
                     </div>
                 <?php endif ?>
             </div>
