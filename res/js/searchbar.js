@@ -81,17 +81,8 @@ function handleSuggestionClick(e) {
     }
 }
 
-function handleSearchButtonClick() {
-    // ir para a página de pesquisa
-    window.location.href = 'search';
-}
-
 window.addEventListener('load', () => {  
     document
         .querySelector('.search-bar input.destino')
         .addEventListener('input', handleDestinationTextChange);
-
-    document
-        .querySelector('.btn-search')
-        .addEventListener('click', handleSearchButtonClick);
 })

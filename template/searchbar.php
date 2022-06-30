@@ -55,13 +55,12 @@
             <p class="section-data" style="height: 26px;">
                 2 Adulto(s), 0 Criança(s)
             </p>
-        </div>    
-
+        </div>
     </div>
 
-    <button class="btn-search">
+    <a href="search" class="btn-search">
         Pesquisar
-    </button>
+    </a>
 </div>
 
 <script type="module" src="res/js/searchbar.js"></script>
