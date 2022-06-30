@@ -97,7 +97,7 @@
 }
 
 .hotel-card-image .price-nights {
-    color: var(--caption-color);
+    color: white;
 
     font-family: Poppins;
     font-size: 12px;
