@@ -134,6 +134,8 @@ body {
 /* usado para manter o footer no fundo da página */
 .wrapper {
     min-height: 100%;
+    /*
     display: grid;
     grid-template-rows: auto 1fr auto;
+    */
 }

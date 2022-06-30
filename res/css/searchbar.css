@@ -13,6 +13,18 @@
     justify-content: space-around;
 }
 
+@media screen and (max-width: 1310px) {
+    .search-bar {
+        width: 95%;
+    }
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .search-bar input[type="text"] {
     border: none;
     outline: none;
@@ -35,7 +47,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 170px;
     margin-left: 14px;
 }
 
@@ -104,7 +115,6 @@
     display: flex;
     flex-direction: column;
     height: 240px;
-    width: 313px;
     bottom: 20px;
 
     background-color: white;
