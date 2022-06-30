@@ -32,7 +32,7 @@
                 <div class="hotel-cards"></div>
             
             </div>
-            
+
             <?php
                 include "./template/footer.php";
             ?>
@@ -40,4 +40,4 @@
 
         <script type="module" src="res/js/searchPage.js"></script>
     </body>
-</html:
+</html>
