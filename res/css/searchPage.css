@@ -30,14 +30,10 @@
 }
 
 .hotel-cards {
-    display: grid; 
-    grid-template-columns: 3fr 3fr 3fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 53px 53px; 
-    grid-template-areas: 
-        ". . ."
-        ". . ."
-        ". . ."; 
 }
 
 .hotel-card {

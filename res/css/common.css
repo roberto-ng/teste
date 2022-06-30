@@ -17,6 +17,7 @@ body {
     background-color: var(--page-background);
     font-family: 'Poppins', sans-serif;
     height: 100%;
+    margin: 0;
 }
 
 .home-page {
@@ -52,6 +53,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    height: 60px;
+}
+
+.white-header {
+    background: white;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.09);
+    margin-bottom: 26px;
 }
 
 .header a.logo {
@@ -76,14 +85,54 @@ body {
     font-weight: 500;
     font-size: 12px;
     line-height: 26px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
 }
 
 .header .button {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 7px;
+    
+    color: var(--caption-color);
+    text-decoration: none;
+}
+
+.header .button img {
+    height: 12px;
+    width: 12px;
 }
 
 .bold-text {
     font-weight: bold;
+}
+
+.footer {
+    height: 66px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    margin-top: 26px;
+
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* usado para manter o footer no fundo da página */
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }

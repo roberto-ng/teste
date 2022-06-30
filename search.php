@@ -9,22 +9,33 @@
     </head>
 
     <body>
-        <div class="search-page">
-            <?php
-                include "./template/searchbar.php";
-            ?>
+        <?php
+            include "./template/header.php";
+        ?>
 
-            <div class="result-infobox">
-                <p class="location-name text-color">
-                    <span class="bold-text">São Paulo,</span> 
-                    Brasil
-                </p>
-
-                <!-- Mostrar quantidade de hotéis encontrados -->
-                <p class="location-caption caption-color"></p>
+        <div class="wrapper">
+            <div class="search-page">
+                <?php
+                    include "./template/searchbar.php";
+                ?>
+    
+                <div class="result-infobox">
+                    <p class="location-name text-color">
+                        <span class="bold-text">São Paulo,</span> 
+                        Brasil
+                    </p>
+    
+                    <!-- Mostrar quantidade de hotéis encontrados -->
+                    <p class="location-caption caption-color"></p>
+                </div>
+    
+                <div class="hotel-cards"></div>
+            
             </div>
-
-            <div class="hotel-cards"></div>
+            
+            <?php
+                include "./template/footer.php";
+            ?>
         </div>
 
         <script type="module" src="res/js/searchPage.js"></script>
