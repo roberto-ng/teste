@@ -35,7 +35,7 @@ function populateSuggestionBox(suggestions) {
     }
 }
 
-/**
+/** Busca novas sugestões quando o texto do campo de destino muda
  * @param {Event} e
  */
 function handleDestinationTextChange(e) {
